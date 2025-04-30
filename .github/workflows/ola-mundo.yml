@@ -5,9 +5,7 @@ on:
   pull_request:
     branches: [ "main" ]
     
-  jobs:
-
-    ola_mundo_mundo_jobs:
+  jobs
       runs-on: ubuntu-latest
       steps:
         - name: Checkout
