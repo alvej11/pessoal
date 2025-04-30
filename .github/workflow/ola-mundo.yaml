@@ -1,13 +1,19 @@
 name: Olá mundo
-on: [push]
-jobs:
-  ola-mundo:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      
-      - name: Olá mundo
-        run: echo "Olá mundo!"
+on: 
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+    
+  jobs:
+
+    ola_mundo_mundo_jobs:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout
+          uses: actions/checkout@v2
+        
+        - name: Olá mundo
+          run: echo "Olá mundo!"
 
      
