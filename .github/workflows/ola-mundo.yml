@@ -5,13 +5,13 @@ on:
   pull_request:
     branches: [ "main" ]
     
-  jobs
-      runs-on: ubuntu-latest
-      steps:
-        - name: Checkout
-          uses: actions/checkout@v2
+jobs:
+  build:    
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
         
-        - name: Olá mundo
-          run: echo "Olá mundo!"
+      - name: Olá mundo
+        run: echo "Olá mundo!"
 
      
