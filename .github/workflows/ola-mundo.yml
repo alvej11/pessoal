@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v2
         
       - name: Olá mundo
-        run: echo "Olá mundo novo!"
+        run: echo "Olá mundo!"
   release:
     runs-on: ubuntu-latest
     steps:
